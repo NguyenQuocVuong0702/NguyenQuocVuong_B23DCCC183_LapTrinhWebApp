@@ -2,24 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý Sinh Viên</title>
-    <link rel="stylesheet" href="opp.css">
+    <title>Quản lí đào tạo</title>
 </head>
 <body>
-    <h1>Quản lý Sinh Viên</h1>
-    <button onclick="showAddStudentForm()">Thêm Sinh Viên</button>
-
-    <table id="studentTable">
-        <thead>
+    <h1>Quản lí sinh viên</h1>
+    <button onclick="">Thêm sinh viên</button>
+    <table id="">
+        <thead>           
             <tr>
-                <th>Mã SV</th>
-                <th>Họ Tên</th>
-                <th>Giới Tính</th>
-                <th>Ngày Sinh</th>
-                <th>Quê Quán</th>
-                <th>Hành Động</th>
+                <th>Mã sinh viên</th>
+                <th>Họ và tên</th>
+                <th>Giới tính</th>
+                <th>Giới tính</th>
+                <th>Quê quán</th>
+                <th>Tuỳ chọn</th>
             </tr>
         </thead>
         <tbody>
@@ -27,30 +24,23 @@
         </tbody>
     </table>
 
-
-    <div id="studentForm" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeForm()">&times;</span>
-            <h2>Thêm/Sửa Sinh Viên</h2>
-            <form id="studentFormContent">
-                <label for="id">Mã SV:</label>
-                <input type="text" id="id" name="id" required>
-                <label for="name">Họ Tên:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="gender">Giới Tính:</label>
-                <select id="gender" name="gender">
-                    <option value="Nam">Nam</option>
-                    <option value="Nữ">Nữ</option>
-                </select>
-                <label for="dob">Ngày Sinh:</label>
-                <input type="date" id="dob" name="dob" required>
-                <label for="hometown">Quê Quán:</label>
-                <input type="text" id="hometown" name="hometown" required>
-                <button type="button" onclick="saveStudent()">Lưu</button>
-            </form>
-        </div>
+    <div id="" class="">
+        <span class="" onclick="">&times;</span>
+        <h2>Thêm/sửa sinh viên</h2>
+        <form action="" id="">
+            <label for="id">Mã sinh viên:</label>
+            <input type="text" id="id" name="id" required>
+            <label for="name">Họ và Tên:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="gender">Giới tính</label>
+            <select name="gender" id="gender">
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+            </select>
+            <label for="dob">Ngày sinh</label>
+            <input type="date" id="dob" name="dob" required>
+            
+        </form>
     </div>
-
-    <script src="opp.js"></script>
 </body>
 </html>

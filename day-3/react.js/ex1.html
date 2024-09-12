@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        const h1 = document.createElement('h1');
+        h1.innerText = "NguyenQuocVuong";
+        h1.id = 'heading';
+        h1.className='demo test';
+        h1.style.color='blue'
+        console.dir(h1);
+
+        const h2 = document.createElement('h1');
+        h2.innerText = "AeLuongTru";
+        h1.id = 'heading-2';
+        h1.className = 'demo test';
+        console.dir(h2);
+        h2.style.color='yellow';
+
+        const root = document.getElementById('root');
+        root.appendChild(h1);
+        root.appendChild(h2);
+    </script>
+</body>
+</html>
