@@ -1,0 +1,153 @@
+/* style.css */
+/* Nền và khung */
+.ToDoList {
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ToDoItem {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.ToDoItem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Nút và biểu tượng */
+.Action svg {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.Action svg:hover {
+    color: #d1453b;  /* Màu khi hover */
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.ItemContent {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.Title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.DueDate {
+    font-size: 14px;
+    color: #888888;
+}
+
+.Action {
+    display: flex;
+    gap: 10px;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal h2 {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-actions button {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-actions button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.form-actions button[type="button"] {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Màu sắc theo trạng thái */
+.todo-card.red {
+    background-color: #ffe6e6; /* Màu nền đỏ cho công việc quá hạn */
+}
+
+.todo-card.yellow {
+    background-color: #fff8e1; /* Màu nền vàng cho công việc chưa quá hạn */
+}
+
+.todo-card.green {
+    background-color: #e8f5e9; /* Màu nền xanh cho công việc đã hoàn thành */
+}
+
+
+
+
+
+
+
